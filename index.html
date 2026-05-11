@@ -3,95 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OBLIVION LABS // SYSTEMIC FINALITY</title>
+    <title>OBLIVION LABS // INSTITUTIONAL RECOVERY</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=JetBrains+Mono&display=swap');
-        body { background-color: #050505; color: #94a3b8; font-family: 'Inter', sans-serif; margin: 0; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;900&family=JetBrains+Mono&display=swap');
+        body { background-color: #030303; color: #64748b; font-family: 'Inter', sans-serif; margin: 0; letter-spacing: -0.01em; }
         .mono { font-family: 'JetBrains Mono', monospace; }
-        .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); backdrop-filter: blur(10px); z-index: 100; align-items: center; justify-content: center; }
+        .modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.98); backdrop-filter: blur(20px); z-index: 100; align-items: center; justify-content: center; }
         .modal:target { display: flex; }
+        .bg-grid { background-image: radial-gradient(#1e293b 0.5px, transparent 0.5px); background-size: 40px 40px; }
     </style>
 </head>
-<body class="min-h-screen flex flex-col p-6 md:p-12 border-[1px] border-slate-900 m-2">
-    <header class="flex justify-between items-start w-full">
-        <div class="space-y-1">
-            <h1 class="text-white font-black tracking-tighter text-3xl italic">OBLIVION <span class="text-slate-700 underline decoration-1 underline-offset-8">LABS</span></h1>
-            <p class="mono text-[9px] text-slate-500 uppercase tracking-[0.4em]">STATUS: ACTIVE // NODE: GLOBAL_HQ // v6.0.5</p>
+<body class="min-h-screen flex flex-col p-8 md:p-20 bg-grid">
+    <header class="flex justify-between items-start w-full relative z-10">
+        <div class="flex flex-col">
+            <h1 class="text-white font-black tracking-tighter text-3xl uppercase">Oblivion <span class="text-slate-800">Labs</span></h1>
+            <p class="mono text-[9px] text-slate-600 uppercase tracking-[0.5em] mt-2">Status: Operational // Node: Global_HQ // v6.0.5</p>
         </div>
-        <div class="mono text-[9px] text-slate-600 text-right uppercase tracking-widest hidden sm:block">
-            LATENCY: 12ms // 2026_GEN_3<br>CURRENCY: AUD_RECOVERY_ENABLED
+        <div class="mono text-[10px] text-slate-700 text-right uppercase tracking-widest leading-relaxed">
+            Archive_ID: 0x882_Alpha<br>
+            <span class="text-emerald-900 animate-pulse">●</span> Sovereign_Encrypted
         </div>
     </header>
 
-    <main class="flex-grow flex flex-col justify-center max-w-5xl py-20">
-        <h2 class="text-slate-600 text-[10px] uppercase tracking-[0.6em] mb-6 mono tracking-widest italic">Institutional Margin Recovery</h2>
-        <h3 class="text-6xl md:text-8xl font-black text-white tracking-tighter leading-none mb-10">THE SYSTEM HAS <br><span class="text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-800">LEAKAGE.</span></h3>
-        <p class="text-lg md:text-2xl text-slate-400 font-light max-w-2xl leading-relaxed mb-16 border-l-2 border-slate-800 pl-8">We identify digital friction and deploy autonomous logic layers to reclaim lost margin. No consultancy. No bloat. Just the result.</p>
-        <div class="flex flex-col sm:flex-row gap-8 items-start">
-            <a href="#intake" class="group relative bg-white text-black px-12 py-6 font-bold text-xs uppercase tracking-[0.3em] transition-all hover:bg-slate-200">
-                REQUEST ACCESS
-                <div class="absolute -bottom-2 -right-2 w-full h-full border border-slate-700 -z-10 group-hover:bottom-0 group-hover:right-0 transition-all duration-300"></div>
+    <main class="flex-grow flex flex-col justify-center max-w-6xl py-32 relative z-10">
+        <h2 class="text-slate-800 text-[10px] uppercase tracking-[0.8em] mb-10 mono font-bold">Institutional Margin Recovery</h2>
+        
+        <h3 class="text-6xl md:text-9xl font-black text-white tracking-tighter leading-[0.8] mb-12 uppercase">
+            Systemic Erosion <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-slate-800">is Capital Decay.</span>
+        </h3>
+        
+        <p class="text-xl md:text-3xl text-slate-500 font-light max-w-4xl leading-tight mb-20">
+            We deploy autonomous logic layers to neutralize operational drag and recapture institutional margin. <span class="text-slate-200">No consultancy. No bloat. No compromise.</span>
+        </p>
+
+        <div class="flex flex-col md:flex-row gap-12 items-start">
+            <a href="#intake" class="group relative bg-white text-black px-16 py-8 font-black text-xs uppercase tracking-[0.5em] transition-all hover:invert">
+                Initialize Handshake
+                <div class="absolute -bottom-3 -right-3 w-full h-full border border-slate-900 -z-10 group-hover:bottom-0 group-hover:right-0 transition-all duration-700"></div>
             </a>
-            <div class="mono text-[10px] text-slate-600 self-center tracking-widest uppercase">// CURRENTLY ACCEPTING INSTITUTIONAL <br>PARTNERSHIPS AND INDUSTRIAL PROJECTS.</div>
+            <div class="mono text-[11px] text-slate-700 self-center tracking-widest uppercase leading-loose border-l border-slate-900 pl-8">
+                Currently accepting institutional <br>
+                partnerships and infrastructure audits.
+            </div>
         </div>
     </main>
 
     <div id="intake" class="modal">
-        <div class="bg-[#0a0a0a] border border-slate-900 p-8 md:p-12 max-w-xl w-full relative shadow-2xl shadow-white/5">
-            <a href="#" class="absolute top-6 right-6 text-slate-700 hover:text-white transition-colors mono text-[10px] tracking-[0.3em]">CLOSE [X]</a>
+        <div class="bg-[#050505] border border-slate-900 p-12 md:p-20 max-w-2xl w-full relative">
+            <a href="#" class="absolute top-10 right-10 text-slate-800 hover:text-white transition-colors mono text-[10px] tracking-widest uppercase">[ Close_Exit ]</a>
             
-            <div class="mb-10">
-                <h4 class="text-white font-black text-2xl uppercase tracking-tighter mb-2">Institutional Access Protocol</h4>
-                <p class="mono text-[9px] text-slate-500 uppercase tracking-widest">Secure Handshake: E2EE // TLS 1.3 // NODE: WA_HQ</p>
+            <div class="mb-16">
+                <h4 class="text-white font-black text-3xl uppercase tracking-tighter mb-4">Sovereign Audit Request</h4>
+                <div class="h-px w-20 bg-slate-800 mb-4"></div>
+                <p class="mono text-[10px] text-slate-700 uppercase tracking-widest">Protocol: End-to-End Encryption Enabled</p>
             </div>
 
-            <form action="https://formspree.io/f/xoqgonzz" method="POST" class="space-y-6">
-                <div class="space-y-1">
-                    <label class="mono text-[9px] text-slate-600 uppercase tracking-widest ml-1">01_Entity_Identity</label>
-                    <input type="text" name="company" placeholder="REGISTERED_COMPANY_NAME" required class="w-full bg-[#0d0d0d] border border-slate-900 p-4 text-xs text-white mono focus:outline-none focus:border-slate-500 transition-colors">
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="space-y-1">
-                        <label class="mono text-[9px] text-slate-600 uppercase tracking-widest ml-1">02_Annual_Volume</label>
-                        <select name="revenue" class="w-full bg-[#0d0d0d] border border-slate-900 p-4 text-[10px] text-slate-400 mono focus:outline-none focus:border-slate-500 appearance-none uppercase">
+            <form action="https://formspree.io/f/xoqgonzz" method="POST" class="space-y-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="space-y-2">
+                        <label class="mono text-[9px] text-slate-800 uppercase tracking-widest font-bold">01_Legal_Entity</label>
+                        <input type="text" name="company" placeholder="NAME" required class="w-full bg-transparent border-b border-slate-900 py-4 text-sm text-white mono focus:outline-none focus:border-white transition-colors">
+                    </div>
+                    <div class="space-y-2">
+                        <label class="mono text-[9px] text-slate-800 uppercase tracking-widest font-bold">02_Annual_Throughput</label>
+                        <select name="revenue" class="w-full bg-transparent border-b border-slate-900 py-4 text-[11px] text-slate-500 mono focus:outline-none focus:border-white appearance-none uppercase cursor-pointer">
                             <option value="tier_1">$1M - $10M AUD</option>
                             <option value="tier_2">$10M - $50M AUD</option>
                             <option value="tier_3">$50M - $250M AUD</option>
                             <option value="tier_4">$250M+ AUD</option>
                         </select>
                     </div>
-                    <div class="space-y-1">
-                        <label class="mono text-[9px] text-slate-600 uppercase tracking-widest ml-1">03_Estimated_Monthly_Leak</label>
-                        <input type="text" name="leakage" placeholder="e.g. $15,000 AUD" class="w-full bg-[#0d0d0d] border border-slate-900 p-4 text-xs text-white mono focus:outline-none focus:border-slate-500">
-                    </div>
                 </div>
 
-                <div class="space-y-1">
-                    <label class="mono text-[9px] text-slate-600 uppercase tracking-widest ml-1">04_Primary_Friction_Point</label>
-                    <select name="friction_type" class="w-full bg-[#0d0d0d] border border-slate-900 p-4 text-[10px] text-slate-400 mono focus:outline-none focus:border-slate-500 appearance-none uppercase">
-                        <option value="logistics">Logistics &amp; Routing Latency</option>
-                        <option value="legacy">Legacy System Integration Bloat</option>
-                        <option value="manual">Manual Data Entry &amp; Reconciliation</option>
-                        <option value="custom">Institutional Logic Deficiency (Other)</option>
+                <div class="space-y-2">
+                    <label class="mono text-[9px] text-slate-800 uppercase tracking-widest font-bold">03_Primary_Systemic_Friction</label>
+                    <select name="friction" class="w-full bg-transparent border-b border-slate-900 py-4 text-[11px] text-slate-500 mono focus:outline-none focus:border-white appearance-none uppercase cursor-pointer">
+                        <option value="logistics">Supply Chain & Logistics Latency</option>
+                        <option value="data">Manual Data Reconciliation Bloat</option>
+                        <option value="legacy">Legacy Core Integration Drag</option>
+                        <option value="logic">Institutional Logic Deficiency</option>
                     </select>
                 </div>
 
-                <div class="space-y-1 pt-4">
-                    <button type="submit" class="w-full bg-white text-black font-black p-5 text-xs uppercase tracking-[0.4em] hover:bg-slate-200 transition-all active:scale-95 shadow-lg shadow-white/5">
-                        Transmit Secure Request
+                <div class="pt-10">
+                    <button type="submit" class="w-full bg-white text-black font-black py-8 text-xs uppercase tracking-[0.6em] hover:bg-slate-200 transition-all active:scale-95 shadow-2xl">
+                        Submit_for_Clearance
                     </button>
+                    <p class="text-center mt-6 mono text-[8px] text-slate-800 tracking-[0.4em] uppercase">E2EE Handshake // Verified Node</p>
                 </div>
-                
-                <p class="text-[8px] mono text-slate-800 text-center uppercase tracking-widest">Ref_ID: 0x882_OBLIVION_SECURE</p>
             </form>
         </div>
     </div>
 
-    <footer class="border-t border-slate-900 pt-8 flex justify-between items-end">
-        <div class="mono text-[9px] text-slate-700 uppercase tracking-tighter">&copy; 2026 OBLIVION LABS HQ.<br>SECURE_DOMAIN: OBLIVION-LABS-HQ.GITHUB.IO</div>
-        <div class="text-slate-800 font-serif italic text-sm opacity-50 uppercase tracking-widest italic">The House Always Wins.</div>
+    <footer class="mt-auto border-t border-slate-950 pt-12 flex flex-col md:flex-row justify-between items-center md:items-end opacity-40">
+        <div class="mono text-[9px] text-slate-800 uppercase tracking-[0.3em] text-center md:text-left mb-4 md:mb-0">
+            © 2026 Oblivion Labs HQ<br>
+            All Rights Reserved // Built for the Sovereign Architect
+        </div>
+        <div class="text-slate-900 font-serif italic text-sm tracking-widest uppercase">
+            The House Always Wins.
+        </div>
     </footer>
 </body>
 </html>
